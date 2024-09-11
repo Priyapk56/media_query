@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Task</title>
+    <style>
+
+        .firstContainer{
+            display: flex;
+            flex-wrap: wrap;
+
+        } 
+        .firstbox{
+            height:100px;
+            flex-basis: 100%;
+            background-color: lawngreen;
+        }
+        .secondContainer{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .box1{
+            height:100px;
+            width: 30%;
+            background-color: cyan ;
+            margin:3px;
+            flex-grow: 3;
+
+        }
+        .thirdContainer{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box2{
+            height:100px;
+            width: 20%;
+            background-color: rgb(109, 114, 114) ;
+            margin:5px;
+            flex-grow: 4;
+
+        }
+
+        @media screen and (max-width:800px) {
+            .box1{
+                flex-basis: 100%;
+            }
+            .box2{
+                flex-basis: 40%;
+                
+            }
+            
+        }
+
+        @media screen and (max-width:600px) {
+            .box1 , .box2{
+                flex-basis: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="firstContainer">
+        <div class="firstbox"></div>
+    </section>
+    <section class="secondContainer">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+
+    </section>
+    <section class="thirdContainer">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+
+    </section>
+    
+</body>
+</html>
